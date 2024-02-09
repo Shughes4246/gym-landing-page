@@ -1,0 +1,42 @@
+html {
+  --green-100: #00e673;
+  --green-200: #00cc66;
+  --green-300: #006400;
+}
+
+h2::before {
+  content: '';
+  width: 150px;
+  height: 2px;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: var(--green-200);
+  position: absolute;
+}
+
+.hamburger.open span:nth-child(1) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}

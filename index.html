@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/d98f30b18a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'green': {
+              100: '#00e673',
+              200: '#00cc66',
+              300: '#006400'
+            },
+            'dark': '#292929'
+          },
+          keyframes: {
+            slideDown: {
+              '0%': { transform: 'translateY(-100%)'},
+              '100%': { transform: 'translateY(0%)' },
+            }
+          },
+          animation: {
+            slideDown: 'slideDown 0.5s ease-in-out',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="top-0 w-full shadow-md bg-dark z-10">
+    <nav class="main-nav justify-between hidden sm:flex">
+      <a href="/" class="brand"><svg width="80" height="80" viewBox="0 0 312.5 312.5" class="looka-1j8o68f"><defs id="SvgjsDefs2462"></defs><g id="SvgjsG2463" featurekey="rootContainer" transform="matrix(3.125,0,0,3.125,0,0)" fill="#eeeeee"><path xmlns="http://www.w3.org/2000/svg" d="M0 0h100v100H0z"></path></g><g id="SvgjsG2464" featurekey="nameFeature-0" transform="matrix(2.6752273178852044,0,0,2.6752273178852044,51.71963718433713,91.68645424307499)" fill="#111111"><path d="M6.2 2.6400000000000006 c3.08 0 4.08 1.72 4.08 4.16 l0 5.96 c0 3.56 -1.36 5.24 -3.88 9.04 c-1.52 2.24 -3.28 4.44 -3.28 7.04 l0 11.16 l-1.52 0 l0 -37.36 l4.6 0 z M8.76 13.2 l0 -5.76 c0 -1.76 -0.4 -3.28 -2.84 -3.28 l-2.8 0 l0 19.8 c0.64 -1.04 1.48 -2.2 2.56 -3.72 c1.96 -2.84 3.08 -4.56 3.08 -7.04 z M20.64 2.6400000000000006 l1.52 0 l0 33.44 c0 2.44 -1 4.16 -4.08 4.16 l-0.56 0 c-3 0 -4.04 -1.72 -4.04 -4.56 l0 -33.04 l1.52 0 l0 32.8 c0 1.76 0.4 3.28 2.84 3.28 c2.4 0 2.8 -1.52 2.8 -3.28 l0 -32.8 z M26.880000000000003 38.48 l0 -35.84 l-1.52 0 l0 37.36 l5.36 0 l0 -1.52 l-3.84 0 z M42.6 29.2 l0 6.88 c0 2.44 -1 4.16 -4.08 4.16 l-0.56 0 c-3 0 -4.04 -1.72 -4.04 -4.16 l0 -9.76 l1.52 0 l0 9.12 c0 1.76 0.4 3.28 2.84 3.28 c2.4 0 2.8 -1.52 2.8 -3.28 l0 -6.64 c0 -2.6 -1.76 -4.8 -3.28 -7 c-2.56 -3.72 -3.88 -5.16 -3.88 -9.04 l0 -6.24 c0 -2.44 1 -4.16 4.04 -4.16 l0.56 0 c3.04 0 4.08 1.72 4.08 4.16 l0 9.84 l-1.52 0 l0 -9.2 c0 -1.76 -0.44 -3.28 -2.84 -3.28 s-2.8 1.52 -2.8 3.28 l0 6 c-0.04 2.52 1.08 4.2 3.08 7.08 c2.72 3.92 4.08 5.36 4.08 8.96 z M51.120000000000005 22.08 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 l-5.32 0 l0 -37.36 l5.32 0 l0 1.52 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 z M59.4 22.08 l-3.84 0 l0 17.92 l-1.52 0 l0 -37.36 l5.36 0 l0 1.52 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 z M64 40 l-1.48 0 l0 -37.36 l1.48 0 l0 37.36 z M76.36 2.6400000000000006 l0 1.52 l-3.84 0 l0 35.84 l-1.52 0 l0 -35.84 l-3.8 0 l0 -1.52 l9.16 0 z"></path></g></svg></a>
+      <ul class="flex items-center justify-between flex-wrap">
+        <li class="nav-item mr-4">
+          <a class="text-white text-lg" href="#">Home</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="text-white text-lg" href="#membership">Membership</a>
+        </li>
+        <!-- <li class="nav-item mr-4">
+          <a class="text-white text-lg" href="#trainers">Trainers</a>
+        </li> -->
+        <li class="nav-item mr-4">
+          <a class="text-white text-lg" href="#classes">Classes</a>
+        </li>
+        <!-- <li class="nav-item mr-4">
+          <a class="text-white text-lg" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="text-white text-lg" href="#blog">Blog</a>
+        </li> -->
+      </ul>
+    </nav>
+    
+    
+    <nav class="mobile-nav relative flex items-center z-10">
+      <a href="/" class="brand sm:hidden"><svg width="80" height="80" viewBox="0 0 312.5 312.5" class="looka-1j8o68f"><defs id="SvgjsDefs2462"></defs><g id="SvgjsG2463" featurekey="rootContainer" transform="matrix(3.125,0,0,3.125,0,0)" fill="#eeeeee"><path xmlns="http://www.w3.org/2000/svg" d="M0 0h100v100H0z"></path></g><g id="SvgjsG2464" featurekey="nameFeature-0" transform="matrix(2.6752273178852044,0,0,2.6752273178852044,51.71963718433713,91.68645424307499)" fill="#111111"><path d="M6.2 2.6400000000000006 c3.08 0 4.08 1.72 4.08 4.16 l0 5.96 c0 3.56 -1.36 5.24 -3.88 9.04 c-1.52 2.24 -3.28 4.44 -3.28 7.04 l0 11.16 l-1.52 0 l0 -37.36 l4.6 0 z M8.76 13.2 l0 -5.76 c0 -1.76 -0.4 -3.28 -2.84 -3.28 l-2.8 0 l0 19.8 c0.64 -1.04 1.48 -2.2 2.56 -3.72 c1.96 -2.84 3.08 -4.56 3.08 -7.04 z M20.64 2.6400000000000006 l1.52 0 l0 33.44 c0 2.44 -1 4.16 -4.08 4.16 l-0.56 0 c-3 0 -4.04 -1.72 -4.04 -4.56 l0 -33.04 l1.52 0 l0 32.8 c0 1.76 0.4 3.28 2.84 3.28 c2.4 0 2.8 -1.52 2.8 -3.28 l0 -32.8 z M26.880000000000003 38.48 l0 -35.84 l-1.52 0 l0 37.36 l5.36 0 l0 -1.52 l-3.84 0 z M42.6 29.2 l0 6.88 c0 2.44 -1 4.16 -4.08 4.16 l-0.56 0 c-3 0 -4.04 -1.72 -4.04 -4.16 l0 -9.76 l1.52 0 l0 9.12 c0 1.76 0.4 3.28 2.84 3.28 c2.4 0 2.8 -1.52 2.8 -3.28 l0 -6.64 c0 -2.6 -1.76 -4.8 -3.28 -7 c-2.56 -3.72 -3.88 -5.16 -3.88 -9.04 l0 -6.24 c0 -2.44 1 -4.16 4.04 -4.16 l0.56 0 c3.04 0 4.08 1.72 4.08 4.16 l0 9.84 l-1.52 0 l0 -9.2 c0 -1.76 -0.44 -3.28 -2.84 -3.28 s-2.8 1.52 -2.8 3.28 l0 6 c-0.04 2.52 1.08 4.2 3.08 7.08 c2.72 3.92 4.08 5.36 4.08 8.96 z M51.120000000000005 22.08 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 l-5.32 0 l0 -37.36 l5.32 0 l0 1.52 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 z M59.4 22.08 l-3.84 0 l0 17.92 l-1.52 0 l0 -37.36 l5.36 0 l0 1.52 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 z M64 40 l-1.48 0 l0 -37.36 l1.48 0 l0 37.36 z M76.36 2.6400000000000006 l0 1.52 l-3.84 0 l0 35.84 l-1.52 0 l0 -35.84 l-3.8 0 l0 -1.52 l9.16 0 z"></path></g></svg></a>
+      <div class="hamburger flex items-center justify-end w-4 h-4 relative ml-auto mr-4 sm:hidden">
+        <span class="block absolute h-0.5 w-full bg-white rounded-sm rotate-0 transition duration-200 top-0"></span>
+        <span class="block absolute h-0.5 w-full bg-white rounded-sm rotate-0 transition duration-200 top-2"></span>
+        <span class="block absolute h-0.5 w-full bg-white rounded-sm rotate-0 transition duration-200 top-2"></span>
+        <span class="block absolute h-0.5 w-full bg-white rounded-sm rotate-0 transition duration-200 top-4"></span>
+        <p class="mr-8 text-white">Menu</p>
+      </div>
+      <div class="navbar relative">
+        <ul class="hidden fixed top-0 left-0 h-screen w-screen bg-dark flex justify-center items-center flex-col gap-5">
+          <li class="nav-item mr-4">
+            <a class="text-white text-lg" href="#">Home</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="text-white text-lg" href="#membership">Membership</a>
+          </li>
+          <!-- <li class="nav-item mr-4">
+            <a class="text-white text-lg" href="#trainers">Trainers</a>
+          </li> -->
+          <li class="nav-item mr-4">
+            <a class="text-white text-lg" href="#classes">Classes</a>
+          </li>
+          <!-- <li class="nav-item mr-4">
+            <a class="text-white text-lg" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="text-white text-lg" href="#blog">Blog</a>
+          </li> -->
+        </ul>
+      </div>
+      
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <div class="hero-section w-full h-screen min800:flex min800:justify-center min800:text-center" style="background-image: url(https://images.pexels.com/photos/4753898/pexels-photo-4753898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+      <div class="flex items-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
+        <div class="container px-4 mx-auto">
+          <div class="max-w-4xl mx-auto">
+            <span class="text-gray-200 font-semibold uppercase tracking-widest">Unleash Your Potential.</span>
+            <h2 class="mt-8 mb-6 text-4xl lg:text-5xl font-bold text-gray-100">PulseFit - Where Every Beat Counts.</h2>
+            <p class="max-w-3xl mb-10 text-lg text-gray-300">
+              Elevate your fitness journey now with our diverse classes. 
+            </p>
+            <a class="relative btn inline-block w-auto mb-4 md:mr-6 py-5 px-8 text-sm font-bold uppercase bg-green-200 text-white border-2 border-transparent rounded transition duration-200 group"
+              href="#">
+              <span>Explore classes</span>
+              <span class="absolute bottom-4 left-0 w-0 h-px bg-white transition-all scale-0 group-hover:w-1/2 group-hover:scale-100  translate-x-1/2"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Memberships-->
+    <section id="membership">
+      <h2 class="relative my-4 text-center text-xl mt-8">Membership packages</h2>
+      <div class="flex flex-col justify-center items-center gap-8 px-2 sm:flex-row">
+        <!-- Basic -->
+        <div class="w-full flex-grow max-w-sm p-4 bg-white border border-green-200 rounded-lg shadow sm:p-8">
+          <i class="fa-solid fa-star text-green-200"></i>
+          <h5 class="mb-4 text-xl font-medium text-gray-500">Basic Membership</h5>
+          <div class="flex items-baseline text-dark ">
+            <span class="text-3xl font-semibold">£</span>
+            <span class="text-5xl font-extrabold tracking-tight">24.99</span>
+            <span class="ms-1 text-xl font-normal text-gray-500 ">/month</span>
+          </div>
+          <ul role="list" class="space-y-5 my-7">
+            <li class="flex items-center">
+              <i class="fa-solid fa-circle-check text-green-200"></i>
+              <span class="text-base font-normal leading-tight text-gray-500 ms-3">Off peak access to the gym</span>
+            </li>
+            <li class="flex">
+              <i class="fa-solid fa-circle-check text-green-200"></i>
+              <span class="text-base font-normal leading-tight text-gray-500 ms-3">Basic workout programs and fitness assessments</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Elite -->
+        <div class="w-full flex-grow max-w-sm p-4 text-white bg-green-200 border border-green-200 rounded-lg shadow sm:p-8">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h5 class="mb-4 text-xl font-medium">Elite Membership</h5>
+          <div class="flex items-baseline ">
+            <span class="text-3xl font-semibold">£</span>
+            <span class="text-5xl font-extrabold tracking-tight">69.99</span>
+            <span class="ms-1 text-xl font-normal ">/month</span>
+          </div>
+          <ul role="list" class="space-y-5 my-7">
+            <li class="flex items-center">
+              <i class="fa-solid fa-circle-check"></i>
+              <span class="text-base font-normal leading-tight ms-3">Nutrition consultation</span>
+            </li>
+            <li class="flex">
+              <i class="fa-solid fa-circle-check"></i>
+              <span class="text-base font-normal leading-tight ms-3">VIP access to all facilities and amenities</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-circle-check"></i>
+              <span class="text-base font-normal leading-tight ms-3">Unlimited personal training sessions</span>
+            </li>
+            <li class="flex">
+              <i class="fa-solid fa-circle-check"></i>
+              <span class="text-base font-normal leading-tight ms-3">Exclusive classes and workshops</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-circle-check"></i>
+              <span class="text-base font-normal leading-tight ms-3">Priority booking for special events and programs</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Premium -->
+        <div class="w-full flex-grow max-w-sm p-4 bg-white border border-green-200 rounded-lg shadow sm:p-8">
+          <i class="fa-solid fa-star text-green-200"></i>
+          <i class="fa-solid fa-star text-green-200"></i>
+          <h5 class="mb-4 text-xl font-medium text-gray-500">Premium Membership</h5>
+          <div class="flex items-baseline text-dark ">
+            <span class="text-3xl font-semibold">£</span>
+            <span class="text-5xl font-extrabold tracking-tight">42.99</span>
+            <span class="ms-1 text-xl font-normal text-gray-500 ">/month</span>
+          </div>
+          <ul role="list" class="space-y-5 my-7">
+            <li class="flex items-center">
+              <i class="fa-solid fa-circle-check text-green-200"></i>
+              <span class="text-base font-normal leading-tight text-gray-500 ms-3">24/7 access to the gym</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-circle-check text-green-200"></i>
+              <span class="text-base font-normal leading-tight text-gray-500 ms-3">Access to group fitness classes</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes -->
+    <section id="classes">
+      <h2 class="relative my-4 text-center text-xl mt-8">Class timetable</h2>
+      <div class="bg-white shadow-md rounded-md overflow-hidden max-w-lg mx-auto mt-6">
+        <ul class="divide-y divide-gray-200">
+          <li class="flex items-center py-4 px-6">
+            <img class="object-cover mr-4" src="../assets/spin.png" alt="Exercise icon spin" />
+            <div class="flex-1">
+                <h3 class="text-lg font-medium text-dark">Spin</h3>
+                <p class="text-gray-600 text-base">Monday 10am - 11am</p>
+            </div>
+            <img class="object-cover mr-4 w-16 h-16 rounded-full" src="../assets/emily-small.jpg" alt="Trainer - Emily" />
+          </li>
+            <li class="flex items-center py-4 px-6">
+              <img class="object-cover mr-4" src="../assets/crossfit.png" alt="Exercise icon crossfit" />
+              <div class="flex-1">
+                  <h3 class="text-lg font-medium text-dark">Crossfit</h3>
+                  <p class="text-gray-600 text-base">Tuesday 5pm - 6pm</p>
+              </div>
+              <img class="object-cover mr-4 w-16 h-16 rounded-full" src="../assets/emily-small.jpg" alt="Trainer - Emily" />
+            </li>
+            <li class="flex items-center py-4 px-6">
+              <img class="object-cover mr-4" src="../assets/yoga.png" alt="Exercise icon yoga" />
+              <div class="flex-1">
+                  <h3 class="text-lg font-medium text-dark">Yoga</h3>
+                  <p class="text-gray-600 text-base">Wednesday 7pm - 8pm</p>
+              </div>
+              <img class="object-cover mr-4 w-16 h-16 rounded-full" src="../assets/samantha-small.jpg" alt="Trainer - Samantha" />
+            </li>
+            <li class="flex items-center py-4 px-6">
+              <img class="object-cover mr-4" src="../assets/hiit.png" alt="Exercise icon HIIT" />
+              <div class="flex-1">
+                  <h3 class="text-lg font-medium text-dark">HIIT</h3>
+                  <p class="text-gray-600 text-base">Friday 9am - 10am</p>
+              </div>
+              <img class="object-cover mr-4 w-16 h-16 rounded-full" src="../assets/jake-small.jpg" alt="Trainer - Jake" />
+            </li>
+            <li class="flex items-center py-4 px-6">
+              <img class="object-cover mr-4" src="../assets/pilates.png" alt="Exercise icon pilates" />
+              <div class="flex-1">
+                  <h3 class="text-lg font-medium text-dark">Pilates</h3>
+                  <p class="text-gray-600 text-base">Saturday 11am - 12pm</p>
+              </div>
+              <img class="object-cover mr-4 w-16 h-16 rounded-full" src="../assets/samantha-small.jpg" alt="Trainer - Samantha" />
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <!-- Trainers -->
+    <section id="trainers">
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="bg-white max-w-7xl mx-auto px-2 py-14">
+      <div class="flex justify-between flex-col gap-5 items-center text-left sm:flex-row sm:items-start">
+        <div class="flex flex-col w-full sm:w-1/3 gap-8">
+          <a href="/" class="brand"><svg width="80" height="80" viewBox="0 0 312.5 312.5" class="looka-1j8o68f"><defs id="SvgjsDefs2462"></defs><g id="SvgjsG2463" featurekey="rootContainer" transform="matrix(3.125,0,0,3.125,0,0)" fill="#eeeeee"><path xmlns="http://www.w3.org/2000/svg" d="M0 0h100v100H0z"></path></g><g id="SvgjsG2464" featurekey="nameFeature-0" transform="matrix(2.6752273178852044,0,0,2.6752273178852044,51.71963718433713,91.68645424307499)" fill="#111111"><path d="M6.2 2.6400000000000006 c3.08 0 4.08 1.72 4.08 4.16 l0 5.96 c0 3.56 -1.36 5.24 -3.88 9.04 c-1.52 2.24 -3.28 4.44 -3.28 7.04 l0 11.16 l-1.52 0 l0 -37.36 l4.6 0 z M8.76 13.2 l0 -5.76 c0 -1.76 -0.4 -3.28 -2.84 -3.28 l-2.8 0 l0 19.8 c0.64 -1.04 1.48 -2.2 2.56 -3.72 c1.96 -2.84 3.08 -4.56 3.08 -7.04 z M20.64 2.6400000000000006 l1.52 0 l0 33.44 c0 2.44 -1 4.16 -4.08 4.16 l-0.56 0 c-3 0 -4.04 -1.72 -4.04 -4.56 l0 -33.04 l1.52 0 l0 32.8 c0 1.76 0.4 3.28 2.84 3.28 c2.4 0 2.8 -1.52 2.8 -3.28 l0 -32.8 z M26.880000000000003 38.48 l0 -35.84 l-1.52 0 l0 37.36 l5.36 0 l0 -1.52 l-3.84 0 z M42.6 29.2 l0 6.88 c0 2.44 -1 4.16 -4.08 4.16 l-0.56 0 c-3 0 -4.04 -1.72 -4.04 -4.16 l0 -9.76 l1.52 0 l0 9.12 c0 1.76 0.4 3.28 2.84 3.28 c2.4 0 2.8 -1.52 2.8 -3.28 l0 -6.64 c0 -2.6 -1.76 -4.8 -3.28 -7 c-2.56 -3.72 -3.88 -5.16 -3.88 -9.04 l0 -6.24 c0 -2.44 1 -4.16 4.04 -4.16 l0.56 0 c3.04 0 4.08 1.72 4.08 4.16 l0 9.84 l-1.52 0 l0 -9.2 c0 -1.76 -0.44 -3.28 -2.84 -3.28 s-2.8 1.52 -2.8 3.28 l0 6 c-0.04 2.52 1.08 4.2 3.08 7.08 c2.72 3.92 4.08 5.36 4.08 8.96 z M51.120000000000005 22.08 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 l-5.32 0 l0 -37.36 l5.32 0 l0 1.52 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 z M59.4 22.08 l-3.84 0 l0 17.92 l-1.52 0 l0 -37.36 l5.36 0 l0 1.52 l-3.84 0 l0 16.4 l3.84 0 l0 1.52 z M64 40 l-1.48 0 l0 -37.36 l1.48 0 l0 37.36 z M76.36 2.6400000000000006 l0 1.52 l-3.84 0 l0 35.84 l-1.52 0 l0 -35.84 l-3.8 0 l0 -1.52 l9.16 0 z"></path></g></svg></a>
+          <p class="text-base text-left font-medium text-dark">Elevate your well-being and physique with our all-encompassing program meticulously crafted to guide you towards achieving your fitness aspirations.</p>
+          <div class="flex gap-7 text-lg text-white min540:justify-center">
+            <i class="fa-brands fa-facebook-f flex justify-center items-center w-12 h-12 bg-green-200 p-4 rounded-full px-[14px] hover:bg-green-300" aria-hidden="true" style="transition: all 0.3s ease 0s;"></i>
+            <i class="fa-brands fa-twitter flex justify-center items-center w-12 h-12 bg-green-200 p-4 rounded-full hover:bg-green-300" aria-hidden="true" style="transition: all 0.3s ease 0s;"></i>
+            <i class="fa-brands fa-pinterest-p flex justify-center items-center w-12 h-12 bg-green-200 p-4 rounded-full px-[14px] hover:bg-green-300" aria-hidden="true" style="transition: all 0.3s ease 0s;"></i>
+            <i class="fa-brands fa-youtube flex justify-center items-center w-12 h-12 bg-green-200 p-4 rounded-full hover:bg-green-300" aria-hidden="true" style="transition: all 0.3s ease 0s;"></i>
+          </div>
+        </div>
+        <div class="flex flex-col gap-8 relative w-full sm:w-auto ">
+          <p class="text-2xl font-bold">Our links</p>
+          <span class="top-8 absolute w-16 h-0.5 bg-green-200"></span>
+          <a href="/" class="text-base text-dark hover:text-green-200 hover:font-medium">Home</a>
+          <a href="/" class="text-base text-dark hover:text-green-200 hover:font-medium">About us</a>
+          <a href="/" class="text-base text-dark hover:text-green-200 hover:font-medium">Classes</a>
+          <a href="/" class="text-base text-dark hover:text-green-200 hover:font-medium">Contact us</a>
+        </div>
+        <div class="flex flex-col gap-8 relative w-full sm:w-auto ">
+          <p class="text-2xl font-bold">Contact Us</p>
+          <span class="top-8 absolute w-16 h-0.5 bg-green-200"></span>
+          <p class="text-base text-dark font-bold">PulseFit, 123 Gym Lane, City, PF57 9PF</p>
+          <p class="text-base text-dark font-bold">+44 7777 777777</p>
+          <p class="text-base text-dark font-medium">info@pulsefit.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark">
+      <p class="max-w-7xl mx-auto p-2 text-base font-medium text-white">© 2024 PulseFit</p>
+    </div>
+    
+  </footer>
+
+  <script src="../javascript/main.js"></script>
+</body>
+</html>
